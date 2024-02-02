@@ -4,47 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Exercises 3</title>
-<link rel="stylesheet" href="docs.theme.min.css">
+<link rel="stylesheet" href="main.css">
 </head>
 <body>
     <!-- NAV BAR-->
     <header>
-    <nav style="font-size: 160%;">
-        <a href="#main">
-            <img src="logo-header.png" alt="logo-header">
-        </a>
-        <abbr title="Check out Outputs from previous requestors!"><a href="#samples">Creation Samples</a></abbr>
-        <abbr title="Register to Avail of services"><a href="#register">Register</a></abbr>
-        <abbr title="If you loved my services, Please leave a review!"><a href="#review">Write a Review</a></abbr>
-        <abbr title="Any questions? Please don't hesitate to contact me"><a href="#contact">Contact Us</a></abbr>
-        <abbr title="All about myself"><a href="#about">About Us</a></abbr>
+    <nav id="main-nav">
+        <img src="logo-header.png">
+            <abbr title="Check out Outputs from previous requestors!"><a href="#samples" >Creation Samples</a></abbr>
+            <abbr title="Register to Avail of services"><a href="#register" id="register-button">Register</a></abbr>
+            <abbr title="If you loved my services, Please leave a review!"><a href="#review" id="review-button">Write a Review</a></abbr>
+            <abbr title="Any questions? Please don't hesitate to contact me"><a href="#contact" id="contact-button">Contact Us</a></abbr>
+            <abbr title="All about myself"><a href="#about">About</a></abbr>
     </nav>
     
     </header>
     <!--END OF NAVBAR-->
-    <br>
-    <br>
-    <br>
     <!--LOGIN PORTAL-->
-    <div class="member-login">
-        <h4>Member's Login</h4>
-            <form class="login-window" action="form-credentials.txt">
-                <label for="username">User Name</label><br>
-                <input type="text" id="username" name="username" placeholder="Username" required><br>
-                <label for="password">Password</label><br>
-                <input type="password" id="password" name="password" placeholder="Password" required><br>
-                <input type="checkbox" id="if-remember-user">
-                <p>Remember me</p>
-                <input type="submit" value="Login">
-            </form>
+    <div id="member-login">
+        <h4 id="h4main">Member's Login</h4>
+            <table>
+                <form id="login-window" action="form-credentials.txt">
+                    <tr>
+                        <td><label for="username">User Name</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="username" name="username" placeholder="Username" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="password" id="password" name="password" placeholder="Password" required></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Login"></td>
+                    </tr> 
+                </form>
+            </table>
     </div>
     <!--END OF LOGIN PORTAL-->
     
     <!--REGISTER-->
-    <div class="register">
+    <section class="register">
         <h4>Register</h4>
         <p>Password should be more than 8 characters</p>
-            <form class="registration-window" action="#">
+            <form id="registration-window" action="#" id="reg-form">
                 <table>
                     <tbody>
                         <tr>
@@ -99,14 +104,48 @@
                         <tr>
                             <td>
                                 <div>
-                                    <button type="submit">Create an Account</button>
+                                    <button type="submit" form="reg-form">Create an Account</button>
                                 </div>
                             </td>    
                         </tr>    
                     </tbody>
                 </table>
             </form>
-    </div>
+    </section>
     <!--END OF REGISTER-->
-</body>
+
+    <!--REVIEW SECTION-->
+    <div id="review-form-outside">
+        <div id="review-form-inside">
+            <form action="#" method="get" id="review-form"></form>
+                <table>
+                    <tr>
+                        <td><label for="review" id="review-box">Please leave a review!</label></td>
+                    </tr>
+                    <tr>
+                        <td><textarea name="review-box" id="review" cols="60" rows="10"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><div><button type="submit" form="review-form">Submit Review!</button></div>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <!--END OF REVIEW SECTION-->
+
+    <!--CONTACT US-->
+    <div id="contact-us-outside-border">
+        <p id="contact-main">Contact me using these channels!</p>
+        <a href="https://discord.gg/8cj5yAx4pp"><img src="discord_logo.png" alt="discord_logo" id="discord_logo"></a>
+        <a href="https://www.facebook.com/goldroom01" ><img src="facebook_logo.png" alt="facebook_logo" id="facebook_logo"></a>
+    </div>
+    <!--CREATION SAMPLES-->
+    <div id="creation-samples">
+        <img src="#" alt="output_01">
+        <img src="#" alt="output_02">
+        <img src="#" alt="output_03"> 
+        <img src="#" alt="output_04">  
+    </div><!--END OF CREATION SAMPLES-->
+</body> 
 </html>
