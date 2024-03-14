@@ -14,13 +14,34 @@ li{
 }
 
 
+#osro_logo{
+    padding:20px;
+}
 
+.homebar{
+    padding:20px;
+}
 
 
 #osro_heading {
-    color:darkgreen ;
-    margin:30px;
-    padding:50px;
+    color:bisque;
+    margin: 40px;
+    padding: 45px;
     text-align: center;
-    font-family:fantasy;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border:solid;
+
+    border-width:thin;
+}
+
+#navbar{
+    border:solid;
+}
+
+#osro_desc{
+    margin:auto;
+    padding:20px;
+    text-align:justify;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
 }
