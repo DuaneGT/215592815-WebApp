@@ -25,7 +25,7 @@
 </div>
 
 <div>
-<a href=""><h5 align="center">Resume and Portfolio</h5></a>
+<a href="/portfoliotemplate/index.html"><h5 align="center">Resume and Portfolio</h5></a>
 </div>
 
 
