@@ -34,12 +34,9 @@
   <summary>Projects</summary>
   <ol>
     <li>
-      <a href="/TributePage/index.html">Tribute Page</a>
-      <ul>
-        <li><a href="/TechnicalDocumentation/index.html">Technical Documentation</a></li>
-      </ul>
-    </li>
+      <a href="/TributePage/index.html">Tribute Page</a></li>
+    <li><a href="/TechnicalDocumentation/index.html">Technical Documentation</a></li>
     <li>
       <a href="/ProductLanding/index.html">Product Landing Page</a>
-      
+      </li>
 </details>
